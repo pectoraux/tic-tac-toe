@@ -93,6 +93,8 @@ export default class Game extends Component {
 					cells={cells}
 					cellClickHandler={this.cellClickHandler}
 				/>
+				{/* <input style="width: 120px;" id="tokenId" name="tokenId" placeholder="input token id"/> */}
+				{/* <input type="button" value="Submit" onclick="submit()"></input> */}
 				<Controls onClick={this.resetGame} />
 			</div>
 		);

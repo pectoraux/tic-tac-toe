@@ -35,6 +35,7 @@ export default class Board extends Component {
 					<div className="winner">
 						{this.getWinner(winner)}
 						{winner === 'XO' ? 'Draw!' : 'Winner!'}
+						{window.localStorage.setItem('winner', winner)}
 					</div>
 				</div>
 			);
