@@ -16,13 +16,13 @@ const Status = ({ isXNext, mode, onModeChange, started, ended }) => {
 	async function saveScore() {
 		console.log('========>submitted', tokenId)
 		const firebaseConfig = {
-		apiKey: "AIzaSyDTb6Evfq1PhrI_TG3azwYED-TTghGQrsk",
-		authDomain: "tiktok-a2bdb.firebaseapp.com",
-		projectId: "tiktok-a2bdb",
-		storageBucket: "tiktok-a2bdb.appspot.com",
-		messagingSenderId: "45370985842",
-		appId: "1:45370985842:web:52e42d37630e9e3ecee1eb",
-		measurementId: "G-F959VMCZ0K",
+			apiKey: process.env.API_KEY,
+			authDomain: process.env.AUTH_DOMAIN,
+			projectId: process.env.PROJECT_ID,
+			storageBucket: process.env.STORAGE_BUCKET,
+			messagingSenderId: process.env.MESSAGING_SENDER_ID,
+			appId: process.env.APP_ID,
+			measurementId: process.env.MEASUREMENT_ID,
 		};
 		const app = initializeApp(firebaseConfig);
 		const db = getFirestore(app);
